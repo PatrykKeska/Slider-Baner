@@ -6,17 +6,16 @@ const btnPrevious = document.querySelector('.previous');
 let i = 1;
 let banersrc = baner.src = `/src/img/${backgrounds[i]}`
 
-
 const changeBackground = () => {
     banersrc = baner.src = `/src/img/${backgrounds[i]}`
     i++;
     if (i >= backgrounds.length) {
         i = 0;
-
     }
 }
 let timer = 3000;
 let index = setInterval(changeBackground, timer)
+
 
 const nextSlide = () => {
     if (index) {
